@@ -1,8 +1,8 @@
-const computerChoiceDisplay = document.getElementById('computer-choice')
-const userChoiceDisplay = document.getElementById('user-choice')
-const resultDisplay = document.getElementById('result')
+const computerChoiceDisplay = document.getElementById("computer-choice")
+const userChoiceDisplay = document.getElementById("user-choice")
+const resultDisplay = document.getElementById("result")
 let userChoice
-const possibleChoices = document.querySelectorAll('button')
+const possibleChoices = document.querySelectorAll("button")
 
 let result
 let computerChoice
@@ -13,6 +13,8 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
     generateComputerChoice()
     getResult()
 }))
+generateComputerChoice()
+
 function generateComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3)
     console.log(randomNumber)
